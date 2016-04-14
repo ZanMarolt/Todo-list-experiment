@@ -1,0 +1,12 @@
+<div class="col-md-12">
+    <div class="col-sm-6 ">
+        <h1>Todos</h1>
+        <input type="text" class="form-control" ng-model="todo.title" placeholder="Write new todo..">
+        <button class="btn btn-block btn-primary" ng-click="addTodoClick()">Add</button>
+        <hr>
+        <div class="padding" ng-repeat="item in todo.model.list">
+            {{item.title}}
+        </div>
+    </div>
+
+</div>
